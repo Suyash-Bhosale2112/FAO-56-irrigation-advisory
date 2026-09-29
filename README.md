@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Farm-Level Irrigation Backend
 
 This is a backend-only sugarcane irrigation advisor. It fetches weather from Google Earth Engine's ERA5-Land daily collection and vegetation observations from Sentinel-2, then runs the FAO-56 water-balance algorithm. There is no Telegram bot, web frontend, scheduler, database, dry-run mode, or bundled test harness.
@@ -65,3 +66,6 @@ python main.py
 `status` is `IRRIGATE_NOW` or `NO_IRRIGATION_NEEDED`. The result includes ET0 method, crop coefficient/source, root depth, soil depletion and trigger, runoff, deep percolation, estimated liters, and drip hours. Irrigation and rain measurements can be supplied as date-keyed mappings to `advise_farm_with_gee()` so they are included during catch-up.
 
 The calculation and parameters are in `irrigation_core.py`; GEE access and daily orchestration are in `irrigation_backend.py`. Calibrate the crop-stage parameters, soil available water, curve number, and drip-system values for the actual farm before relying on recommendations.
+=======
+# FAO-56-irrigation-advisory
+>>>>>>> origin/main
