@@ -1,0 +1,9 @@
+.env
+farms.json
+state.json
+state.json.tmp
+ee-*.json
+*service-account*.json
+*.db
+logs/*.log
+__pycache__/

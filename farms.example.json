@@ -1,0 +1,27 @@
+{
+  "farms": [
+    {
+      "farm_id": "FARM_1",
+      "latitude_deg": 17.7941385,
+      "longitude_deg": 74.0482132,
+      "area_m2": 4421.6,
+      "planting_date": "YYYY-MM-DD",
+      "flow_lph": 4.0,
+      "emitters_per_acre": 4000,
+      "elevation_m": 600.0,
+      "geometry_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [74.0481292, 17.7946191],
+            [74.0478737, 17.7938031],
+            [74.0483533, 17.7936908],
+            [74.0485184, 17.7944993],
+            [74.048487, 17.7944993],
+            [74.0481292, 17.7946191]
+          ]
+        ]
+      }
+    }
+  ]
+}
