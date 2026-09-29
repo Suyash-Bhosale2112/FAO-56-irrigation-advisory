@@ -22,7 +22,7 @@ Copy-Item farms.example.json farms.json
 
 Edit `farms.json` with real farm coordinates, area, planting date, elevation, and drip-system values. Add a GeoJSON Polygon to `geometry_geojson` if Sentinel-2 NDVI should be averaged over the farm boundary; `null` uses the farm coordinate. This local farm file is ignored by Git.
 
-The local `.env` points `GEE_SERVICE_ACCOUNT_KEY` to the service-account JSON and provides `GEE_PROJECT_ID`. The service account must be registered for Earth Engine use and have access to the project. Never commit or share its private key. **The key attached in the conversation is exposed and must be revoked in Google Cloud. Create a replacement key and replace the local JSON file before running either command below.**
+The local `.env` points `GEE_SERVICE_ACCOUNT_KEY` to the service-account JSON and provides `GEE_PROJECT_ID`. The service account must be registered for Earth Engine use and have access to the project.
 
 ## Daily Backend Call
 
@@ -65,6 +65,4 @@ python main.py
 `status` is `IRRIGATE_NOW` or `NO_IRRIGATION_NEEDED`. The result includes ET0 method, crop coefficient/source, root depth, soil depletion and trigger, runoff, deep percolation, estimated liters, and drip hours. Irrigation and rain measurements can be supplied as date-keyed mappings to `advise_farm_with_gee()` so they are included during catch-up.
 
 The calculation and parameters are in `irrigation_core.py`; GEE access and daily orchestration are in `irrigation_backend.py`. Calibrate the crop-stage parameters, soil available water, curve number, and drip-system values for the actual farm before relying on recommendations.
-=======
 # FAO-56-irrigation-advisory
->>>>>>> origin/main
