@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Farm-Level Irrigation Backend
 
 This is a backend-only sugarcane irrigation advisor. It fetches weather from Google Earth Engine's ERA5-Land daily collection and vegetation observations from Sentinel-2, then runs the FAO-56 water-balance algorithm. There is no Telegram bot, web frontend, scheduler, database, dry-run mode, or bundled test harness.
